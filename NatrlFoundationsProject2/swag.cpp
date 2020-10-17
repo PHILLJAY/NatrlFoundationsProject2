@@ -9,6 +9,7 @@ int main() {
 
 	//create int i used in loops and x which indicates our current char as an int value, n is the encryption/decryption number
 	int i = 0, x = 0, n = 0;
+	//boolean for use if its false
 	bool done = false;
 	string yesno, final, test1, cont ="C";
 	//take string (create a code to take string as input)
@@ -85,6 +86,7 @@ int main() {
 			}
 		}
 		cout << final << "\n";
+		//FIX THIS PLEASE IT SUCKS AAAA
 		cout << "Select an option\n (E) Exit\n (C) Continue Encrypting/Decrypting\n";
 		getline(cin, cont);
 		if (cont=="E")
