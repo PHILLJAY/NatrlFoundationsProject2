@@ -15,6 +15,11 @@ int main() {
 	//take string (create a code to take string as input)
 	while (cont=="C")
 	{
+		cont.clear();
+		test1.clear();
+		yesno.clear();
+		final.clear();
+
 		cout << "Please input the string you would like to encrypt/decrypt\n";
 		getline(cin, test1);	//gets next line and inputs it as the test1 string
 		while (!((yesno == "E" || yesno == "D") && done))
@@ -88,10 +93,11 @@ int main() {
 		cout << final << "\n";
 		//FIX THIS PLEASE IT SUCKS AAAA
 		cout << "Select an option\n (E) Exit\n (C) Continue Encrypting/Decrypting\n";
-		getline(cin, cont);
+		cin >> cont;
 		if (cont=="E")
 		{
 			exit;
 		}
+		cin.get();
 	}
 }
